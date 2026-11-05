@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fun Hub - Pastel Garden Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🌿 Interactive Fun Hub</h1>
+    <p>Welcome to our little Pastel Garden Café!</p>
+    <nav>
+        <a href="#word">Word Analyzer</a>
+        <a href="#bmi">BMI Calculator</a>
+        <a href="#fruit">Fruit Farm</a>
+        <a href="#currency">Currency</a>
+        <a href="#coin">Coin Flip</a>
+        <a href="#cake">Cake Order</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="word" class="card">
+        <h2>📝 Word Analyzer</h2>
+        <p>Find the shortest and longest word in a sentence.</p>
+        <input type="text" id="sentence" placeholder="Enter a sentence">
+        <button id="analyze">Analyze Words</button>
+        <p id="wordResult"></p>
+    </section>
+
+    <section id="bmi" class="card">
+        <h2>⚖️ BMI Calculator</h2>
+        <p>Calculate your Body Mass Index.</p>
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" placeholder="Enter weight">
+        <label>Height (meters)</label>
+        <input type="number" id="height" step="0.01" placeholder="Enter height">
+        <button id="bmiButton">Calculate BMI</button>
+        <p>Your BMI: <span id="score"></span></p>
+        <p>Body Type: <span id="type"></span></p>
+    </section>
+
+    <section id="fruit" class="card">
+        <h2>🍎 Fruit Farm</h2>
+        <p>Grow your own fruit garden!</p>
+        <label>Rows</label>
+        <input type="number" id="rows" placeholder="Enter rows">
+        <label>Columns</label>
+        <input type="number" id="columns" placeholder="Enter columns">
+        <button id="plant">Plant Garden</button>
+        <div id="garden"></div>
+    </section>
+
+    <section id="currency" class="card">
+        <h2>💱 Currency Converter</h2>
+        <p>Convert Indian Rupees and US Dollars.</p>
+        <input type="number" id="data" placeholder="Enter amount">
+        <label>From</label>
+        <select id="from">
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">US Dollar</option>
+        </select>
+        <label>To</label>
+        <select id="to">
+            <option value="USD">US Dollar</option>
+            <option value="INR">Indian Rupee</option>
+        </select>
+        <button id="convertButton">Convert</button>
+        <p>Result: <span id="answer"></span></p>
+    </section>
+
+    <section id="coin" class="card">
+        <h2>🪙 Heads or Tails?</h2>
+        <p>Let's flip a coin!</p>
+        <div id="coinDisplay">🪙</div>
+        <button id="flip">Flip Coin</button>
+        <p>Heads Total: <span id="num_heads">0</span></p>
+        <p>Tails Total: <span id="num_tails">0</span></p>
+    </section>
+
+    <section id="cake" class="card">
+        <h2>🎂 Birthday Cake Order</h2>
+        <p>Choose your cakes and calculate the total price.</p>
+
+        <label>Number of 1/2 kg Cakes (Rs.100)</label>
+        <input type="number" id="small" min="0" value="0">
+
+        <label>Number of 1 kg Cakes (Rs.200)</label>
+        <input type="number" id="medium" min="0" value="0">
+
+        <label>Number of 2 kg Cakes (Rs.400)</label>
+        <input type="number" id="large" min="0" value="0">
+
+        <p>Select Tip:</p>
+        <label class="radio-label">
+            <input type="radio" name="tip" value="10"> 10%
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="tip" value="15" checked> 15%
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="tip" value="20"> 20%
+        </label>
+
+        <button id="submit">Calculate Order</button>
+        <p>Total Cost: Rs. <span id="price">0.00</span></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>🌿 Made with love at Pastel Garden Café 🌿</p>
+    <p>JavaScript DOM Elements and Events | Experiment 05</p>
+</footer>
+
+</body>
+</html>

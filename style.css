@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f5eb;
+    color: #405344;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #dce8d5;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 3px solid #b7c9ae;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #36533d;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #617663;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405344;
+    background-color: #fffdf5;
+    padding: 9px 17px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #789879;
+    color: white;
+}
+
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+.card {
+    background-color: #fffdf7;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    border: 1px solid #dce5d5;
+    box-shadow: 0 5px 15px rgba(91, 115, 87, 0.10);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(91, 115, 87, 0.16);
+}
+
+.card h2 {
+    color: #58765c;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.card p {
+    margin: 12px 0;
+}
+
+input:not([type="radio"]), select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #c9d8c2;
+    border-radius: 9px;
+    background-color: #fafbf6;
+    font-size: 15px;
+    color: #405344;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #789879;
+    box-shadow: 0 0 5px #c4d7bd;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+    color: #526b53;
+}
+
+button {
+    background-color: #789879;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #527555;
+    transform: scale(1.04);
+}
+
+#wordResult, #score, #type, #answer, #price {
+    color: #527555;
+    font-weight: bold;
+}
+
+#garden {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: start;
+}
+
+.fruit {
+    font-size: 35px;
+    background-color: #edf3e7;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coinDisplay {
+    font-size: 75px;
+    margin: 15px 0;
+    color: #b28b42;
+}
+
+.radio-label {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+input[type="radio"] {
+    accent-color: #789879;
+}
+
+footer {
+    background-color: #dce8d5;
+    text-align: center;
+    padding: 25px;
+    color: #526b53;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+}
